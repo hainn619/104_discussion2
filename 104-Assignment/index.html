@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+
+
+    <title>Pet Register</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Pet Register</h1>
+        <nav>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Index</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">About</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Services</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Register</a>
+        </nav>
+    </header>
+    <div class="form-control">
+        <input type="text" id="txtName" placeholder="Enter the name">
+    </div>
+    <div class="form-control">
+        <input type="text" id="txtAge" placeholder="Age">
+    </div>
+    <div class="form-control">
+        <select name="gender" id="gender">
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+        </select>
+    </div>
+    <div class="form-control">
+        <select name="services" id="services">
+            <option value="nailcut">Nail Cut</option>
+            <option value="grooming">Grooming</option>
+        </select>
+    </div>
+    <div class="form-control">
+        <input type="text" id="txtOwnerName" placeholder="Owner Name">
+    </div>
+    <div class="form-control">
+        <input type="text" id="txtPhone" placeholder="Phone Number">
+    </div>
+    <div class="form-control">
+        <button id="register" onclick="register()">Submit</button>
+    </div>
+    <div class="container">
+        <input type="search" id="txtsearch">
+        <button onclick="searchPet();" class="btn bt-danger"> Search</button>
+    </div>
+    <div id="pets"></div>
+    <script src="register.js"></script>
+    <script src="display.js"></script>
+
+</body>
+
+</html>
